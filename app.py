@@ -14,5 +14,10 @@ def home1():
 def rickrollsite():
     return render_template('rickrollsite.html')
 
+@app.route('/rickroll')
+def rickroll():
+    return render_template('rickroll.html')
+    
+
 if __name__ == "__main__":
     app.run()
